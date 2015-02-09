@@ -1,0 +1,45 @@
+{
+  "name": "Farbe",
+  "version": "0.0.1",
+  "description": "Collaborative Paint App",
+  "main": "app.js",
+  "contributors": [
+    {
+      "name": "Josue Rodriguez",
+      "email": "joshvoll@yahoo.com",
+      "url": "http://josuerdz.com/"
+    },
+    {
+      "name": "Luis Matute",
+      "email": "luis.matute@me.com",
+      "url": "http://luismatute.me/"
+    }
+  ],
+  "dependencies": {
+    "colors": "^1.0.3",
+    "express": "^4.11.2",
+    "express-hbs": "^0.7.11",
+    "good": "^5.1.1",
+    "good-console": "^4.1.0",
+    "hapi": "^8.1.0",
+    "joi": "^5.1.0",
+    "require-directory": "^2.0.0",
+    "socket.io": "^1.3.3",
+    "yar": "^3.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshvoll/farbe.git"
+  },
+  "keywords": [
+    "Paint",
+    "Real-Time"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshvoll/farbe/issues"
+  },
+  "homepage": "https://github.com/joshvoll/farbe"
+}
