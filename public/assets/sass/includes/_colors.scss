@@ -1,0 +1,78 @@
+//
+// Colors
+// --------------------------------------------------
+
+
+  $blue: (
+    "base": #4FC1E9
+  );
+
+  $black: (
+    "base": #000,
+    "dark": #333
+  );
+
+  $white: (
+    "base": #fff
+  );
+
+  $yellow: (
+	"base": #FCBB42
+  );
+
+  $green: (
+	"base": #A0D468
+  );
+
+  $red: (
+	"base": #E9573F
+  );
+
+  $purple: (
+	"base": #967ADC
+  );
+
+  $colors: (
+    "black": $black,
+    "white": $white,
+    "yellow": $yellow,
+    "red": $red,
+    "green": $green,
+    "blue": $blue,
+    "purple": $purple
+  );
+
+// Backgrounds
+//----------------------
+
+@function color($color, $type: "base") {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}
+
+@each $color_name, $color in $colors {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text {
+        color: $color_value !important;
+      }
+    }
+    @else {
+      .#{$color_name}.#{$color_type} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text.text-#{$color_type} {
+        color: $color_value !important;
+      }
+    }
+  }
+}

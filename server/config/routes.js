@@ -27,7 +27,7 @@
 				method: 'GET',
 				path: '/assets/{path*}',
 				handler: {
-					directory: { path: './public/dist/assets/', listing: false, index: true }
+					directory: { path: './public/assets/', listing: false, index: true }
 				}
 			}
 		];
