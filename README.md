@@ -1,1 +1,1 @@
-Paint App for school
+Farbe

@@ -35,3 +35,7 @@ var Hapi = require('hapi'),
 		//Log to the console the host and port info
 		console.log('Server started at: ' + server.info.uri);
 	});
+
+
+
+// http://mindthecode.com/lets-build-an-angularjs-app-with-browserify-and-gulp
